@@ -1,0 +1,14 @@
+public class lecture_2 {
+
+    public static void main(String[] args) {
+
+        int a=5;
+        double b= 3.25;
+        long l=678;
+       // b = a;
+        a = a<<1;
+
+
+        System.out.println(a);
+    }
+}
