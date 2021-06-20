@@ -1,0 +1,43 @@
+class box
+{
+    int width;
+    int length;
+    int height;
+    box(int w , int l ,int h)
+    {
+        System.out.println("constructor");
+        width=w;
+        length=l;
+        height=h;
+    }
+    void volume()
+    {
+        System.out.println(width*length*height);
+    }
+    void setdim(int w, int l, int h)
+    {
+        width=w;
+        length=l;
+        height=h;
+    }
+
+}
+
+public class opps {
+    public static void main(String[] args)
+    {
+        box b1 = new box(10,20,30);
+        b1.setdim(10,30,20);
+
+        b1.volume();
+
+        box b2 = new box(1,2,3);
+        b2.setdim(1,3,2);
+        b2.volume();
+
+
+        int volume= b1.height* b1.length* b1.width;
+        int volume1= b2.height* b2.length* b2.width;
+       // System.out.println(volume);
+       // System.out.println(volume1);
+    }
