@@ -1,0 +1,18 @@
+public class pattern3 {
+    public static void main(String[] args)
+    {
+        int row=4;
+        for(int i=1;i<=row;i++)
+        {
+            for(int space=1;space<=(row-1);space++)
+            {
+                System.out.print(" ");
+            }
+            for(int k=1;k<=((2*i)-1);k++)
+            {
+                System.out.println("*");
+            }
+            System.out.println();
+        }
+    }
+}
