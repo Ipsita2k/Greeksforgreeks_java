@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class lecture3 {
+    public static void main(String[] args){
+        Scanner s = new Scanner (System.in);
+        System.out.println("please enter a number");
+        int num=s.nextInt();
+        if((num%2) !=0){
+            System.out.println("odd check");
+        }
+        else{
+            if ((num>=2)&&(num<=5)){
+                System.out.println("even-1");
+            }
+            else if((num>=6)&&(num<=20)){
+                System.out.println("even-2");
+            }
+            else{
+                System.out.println("even-3");
+            }
+        }
+
+
+
+
+    }
+}
