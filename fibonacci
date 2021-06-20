@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class fibonacci {
+    public  static boolean checkfibonacci(int num)
+    {
+        int fib1=0;
+        int fib2=1;
+        int temp=1;
+        if(num==fib1||num == fib2)
+            return true;
+        while(true)
+        {
+            temp=fib1+fib2;
+            fib1=fib2;
+            fib2=temp;
+            if (temp==num)
+                return true;
+            if(temp>num)
+                return false;
+
+        }
+    }
+    public static void main(String []args)
+    {
+        Scanner obj = new Scanner(System.in);
+        System.out.println("enter a number");
+        int num=obj.nextInt();
+        fibonacci ob =new fibonacci();
+        boolean ans= checkfibonacci(num);
+        System.out.println(ans);
+    }
+}
