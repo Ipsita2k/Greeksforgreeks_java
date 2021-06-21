@@ -1,0 +1,41 @@
+// we had created the class A in which there are two variable and one methord
+//another class B that extends A in which there are one vaiable and two methors
+//in the class inheritance we had creted two objects for two class and opertate the operation
+
+
+package p1;
+
+public class A {
+    int i,j;
+    void showij()
+    {
+        System.out.println("the value of i and j is:"+i+" "+j);
+    }
+}
+public class B extends A {
+    int k;
+    int i=10;
+    int j=20;
+
+    void showk() {
+        System.out.println("the vlue of k is:" + k);
+    }
+
+    void sum() {
+        System.out.println("the sum of i j k +"+(i + j + k));
+    }
+}
+public class Inheritance {
+    public static void main(String[] arg) {
+        A supob = new A();
+        B subob = new B();
+        supob.i = 10;
+        supob.j = 20;
+        supob.showij();
+        subob.k = 30;
+        subob.showk();
+        subob.sum();
+
+
+    }
+}
