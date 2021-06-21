@@ -1,0 +1,36 @@
+class A1
+{
+    void run(){
+        System.out.println(" running a1");
+    }
+}
+class B1 extends A1
+{
+    void run(){
+        System.out.println(" running b1");
+    }
+}
+class C1 extends A1
+{
+        void run(){
+        System.out.println(" running c1");
+        }
+        }
+
+
+public class runtimepoly {
+    public static void main(String[] args) {
+        A1 a = new A1();
+        B1 b = new B1();
+        C1 c = new C1();
+        A1 r;
+        r = a;
+        r.run();
+        r = b;
+        r.run();
+        r = c;
+        r.run();
+    }
+
+
+}
