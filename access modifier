@@ -1,0 +1,87 @@
+//here we created two package p1  and p2 
+//in p1 we created 3 class protection (base class), derived(etended class from protection),SamePackage(not extended)
+//in p2 we created 2 class protection_2(extended from p1.protecton),otherpackage
+// here we can see how access modifier works(public,protected ,private,default)supports or not
+
+package p1;
+//base class
+public class protection {
+    int n=1;
+    private int n_pri=9;
+    protected int n_pro=8;
+    public int n_pub=7;
+
+    public protection()
+    {
+        System.out.println("base constructor");
+        System.out.println("n="+n);
+        System.out.println("n_pri="+n_pri);
+        System.out.println("n_pro="+n_pro);
+        System.out.println("n_pub="+n_pub);
+
+    }
+}
+
+
+
+package p1;
+//derived class extends base class
+public class Derived extends protection {
+    Derived()
+    {
+        System.out.println("Derived constructor");
+        System.out.println("n="+n);
+        //System.out.println("n_pri="+n_pri); (same package private acces modified can not inherit)
+        System.out.println("n_pro="+n_pro);
+        System.out.println("n_pub="+n_pub);
+    }
+}
+
+
+
+package p1;
+
+public class SamePackage {
+    SamePackage()
+    {
+        protection p= new protection();
+        System.out.println("same package constructor");
+        System.out.println("n="+p.n);
+        //System.out.println("n_pri="+p.n_pri);
+        System.out.println("n_pro="+p.n_pro);
+        System.out.println("n_pub="+p.n_pub);
+    }
+}
+
+
+
+package p2;
+//another package p2
+import p1.protection;
+
+public class protection_2 extends protection{
+    protection_2()
+    {
+        System.out.println("protection_2 constructor");
+    //    System.out.println("n="+n); can not exted from different pakage defalut value
+    //    System.out.println("n_pri="+n_pri); can not extend from diffrent package private calue
+        System.out.println("n_pro="+n_pro);
+        System.out.println("n_pub="+n_pub);
+    }
+}
+
+
+
+import p1.protection;
+
+class otherpackage {
+    otherpackage()
+    {
+        p1.protection p =new p1.protection();
+        System.out.println("otherpackage constructor");
+    //    System.out.println("n="+p.n);
+    //    System.out.println("n_pri="+p.n_pri);
+    //    System.out.println("n_pro="+p.n_pro);
+        System.out.println("n_pub="+p.n_pub);
+    }
+}
