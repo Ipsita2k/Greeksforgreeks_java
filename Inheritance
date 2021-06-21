@@ -32,6 +32,8 @@ public class Inheritance {
         supob.i = 10;
         supob.j = 20;
         supob.showij();
+        supob.i=9;
+        supob.j=9;
         subob.k = 30;
         subob.showk();
         subob.showij();
