@@ -34,6 +34,7 @@ public class Inheritance {
         supob.showij();
         subob.k = 30;
         subob.showk();
+        subob.showij();
         subob.sum();
 
 
