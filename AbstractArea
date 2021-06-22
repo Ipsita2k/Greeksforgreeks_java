@@ -1,0 +1,48 @@
+class Figure{
+    double Dim1;
+    double Dim2;
+    Figure(double a , double b)
+    {
+        Dim1=a;
+        Dim2=b;
+    }
+    double area()
+    {
+        System.out.println(" area is not define");
+        return 0;
+    }
+}
+class Rectangle extends Figure{
+    Rectangle(double a,double b )
+    {
+        super(a,b);
+    }
+    double area(){
+        System.out.println("the area of rectangle is");
+        return(Dim1*Dim2);
+    }
+}
+class triangle extends Figure{
+    triangle(double a,double b )
+    {
+        super(a,b);
+    }
+    double area(){
+        System.out.println("the area of triangle is");
+        return((Dim1*Dim2)/2);
+    }
+}
+
+public class AbstractArea {
+    public static void main(String[]args)
+    {
+        Figure f=new Figure(10,10);
+        Rectangle r=new Rectangle(7,8);
+        triangle t=new triangle(10,7);
+        Figure figref;//figref is the reference variable of class figure
+        figref=r;iheritance
+        System.out.println("the area is" +figref.area());
+        figref=t;
+        System.out.println("the area is" +figref.area());
+    }
+}
