@@ -1,0 +1,27 @@
+interface Callback{
+    void callback(int p);
+}
+class client implements Callback
+{
+   // @Override
+    public void callback(int p) {
+
+            System.out.println("hello"+p);
+    }
+    public void called()
+    {
+        System.out.println("hello harry");
+    }
+
+
+
+}
+public class Interfaceintro {
+    public static void main(String[]args)
+    {
+        Callback c= new client();
+        c.callback(1);
+        client ob=new client();
+        ob.called();
+    }
+}
