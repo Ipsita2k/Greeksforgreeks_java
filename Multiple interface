@@ -1,0 +1,24 @@
+interface flyable{
+    void fly();
+}
+interface eatable{
+    void eat();
+}
+class Bird implements flyable,eatable       //multiple interface
+{
+    public void fly() {
+        System.out.println("Bird flying");
+    }
+    public void eat()
+    {
+        System.out.println("bird eating");
+    }
+
+}
+public class interfacetwo {
+    public static void main(String[]args) {
+        Bird b = new Bird();
+        b.eat();
+        b.fly();
+    }
+}
