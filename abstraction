@@ -1,0 +1,27 @@
+abstract class A{
+    abstract void callme();
+    abstract void called();
+    void call()
+    {
+        System.out.println("call A");
+    }
+}
+class B extends A{
+    void callme(){
+        System.out.println("call B");
+    }
+    void called(){
+        System.out.println("called B");
+    }
+
+}
+
+public class abstraction {
+    public static void main(String[]args)
+    {
+        B obj= new B();
+        obj.callme();
+        obj.called();
+
+    }
+}
