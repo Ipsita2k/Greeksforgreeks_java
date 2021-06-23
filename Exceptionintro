@@ -1,0 +1,15 @@
+public class Exceptionintro {
+    public static void main(String[]args)
+    {
+        try{
+            int d=0;
+            int a=42/d;
+            System.out.println(a);
+            System.out.println("checking");
+        }
+        catch(ArithmeticException e){
+            System.out.println("divided by zero");
+        }
+        System.out.println("hello moto  ");
+    }
+}
