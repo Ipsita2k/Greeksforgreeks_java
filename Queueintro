@@ -1,0 +1,12 @@
+import java.util.*;
+public class queueintro {
+    public static void main(String[]args){
+        Queue<String> q= new LinkedList<>();
+        q.add("a");
+        q.add("c");
+        q.add("h");
+        System.out.println(q);
+        System.out.println(q.poll());
+
+    }
+}
