@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class Collectionuse {
+    public static void main(String[] args){
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+        arr.add(1);
+        arr.add(2);
+        Character gf  = 'a';             //Autoboxing
+        System.out.println(gf);
+        Integer l = new Integer(10);
+        int l1=l;                         //unboxing
+        System.out.println(l1);
+        for(int i=0;i<arr.size();i++)
+        {
+            System.out.println(arr.get(i));
+        }
+
+    }
+}
