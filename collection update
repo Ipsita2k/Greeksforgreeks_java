@@ -1,0 +1,16 @@
+public class Collectionuse {
+    public static void main(String[] args){
+        ArrayList<String> arr = new ArrayList<String>();
+        arr.add("greeks");
+        arr.add("greeks");
+        arr.add("for");
+        arr.remove(1);            //index remove
+        arr.removal("greeks");   //object remove
+        System.out.println(l1);
+        for(int i=0;i<arr.size();i++)
+        {
+        System.out.println(arr.get(i));
+        }
+
+    }
+}
