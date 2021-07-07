@@ -1,0 +1,14 @@
+package DSA;
+public class Arrayintro {
+    public static void main(String[]args)
+    {
+        int month_days[]=new int[12];
+        month_days[0]=31;
+        month_days[1]=28;
+       // month_days[1]=28;
+        System.out.println("january has"+month_days[0]+"days");
+        System.out.println("febuary");
+
+
+    }
+}
