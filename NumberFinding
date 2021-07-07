@@ -1,0 +1,38 @@
+package DSA;
+
+import java.util.Scanner;
+
+public class arraytest {
+    public static void main(String[]args)
+    {
+        int arr[]=new int[5];
+        //arr[0]=5;
+        //arr[1]='I';
+
+        Scanner s=new Scanner(System.in);
+        for(int i=0;i<5;i++)
+        {
+            System.out.println("enter the number"+(i+1)+" ");
+            arr[i]=s.nextInt();
+        }
+        System.out.println("enter the arget value");
+        int target= s.nextInt();
+        for(int i=0;i<5;i++)
+        {
+            for(int j=0;j<5;j++)
+            {
+                if((arr[i]+arr[j])==target)
+                {
+                    System.out.print("yes");
+                    System.out.println();
+                    return;
+                }
+            }
+        }
+        System.out.println();
+    }
+
+    //System.out.println("no");
+
+}
+    
